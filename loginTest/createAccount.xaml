@@ -1,0 +1,30 @@
+﻿<Window x:Class="loginTest.createAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:loginTest"
+        mc:Ignorable="d"
+        Title="createAccount" Height="450" Width="350" FontSize="14">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#04c582"/>
+            <GradientStop Color="CadetBlue" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Border Background="#2e3137" CornerRadius="20" Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Create an Account" Foreground="White" FontSize="20" HorizontalAlignment="center"></Label>
+            <Separator></Separator>
+            <Label Content="Create a username: " Foreground="White"></Label>
+            <TextBox Name="userNameBoxC" Background="#545d6a" FontSize="18"></TextBox>
+            <Label Content="Create a password: " Foreground="White"></Label>
+            <PasswordBox Name="passwordBoxC" Background="#545d6a" FontSize="18"></PasswordBox>
+            <Label Content="Verify password: " Foreground="White"></Label>
+            <PasswordBox Name="verifyBox" Background="#545d6a" FontSize="18"></PasswordBox>
+            <Button Name="createBtn" Content="Create Account" Background="#545d6a" Foreground="White" Click="createBtn_Click" Margin="60 20"></Button>
+            <Label Name="warningLabel" Content="" Foreground="Red" HorizontalContentAlignment="Center" FontSize="12" HorizontalAlignment="center" Width="270"/>
+            <Label Name="redirecting" Content="" Foreground="Lime" HorizontalContentAlignment="Center" FontSize="12" HorizontalAlignment="center"  Width="270"/>
+        </StackPanel>
+    </Border>
+</Window>
