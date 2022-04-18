@@ -1,4 +1,6 @@
-The goal of this project was to create a login interface using WPF and C#. This program uses a local Microsoft Server SQL Database to store and retrieve user login information through ADO.NET. Users may only login if their credentials are found in the SQL database. Users may click on the "Create Account" button to create credentials that are stored in the SQL database. Windows were designed using a StackPanel layout in the XAML. Appropriate warnings are shown to the user according to their input: e.g. "Password length must be at least 8 characters", "That username already exists", etc.
+The goal of this project was to create a login interface using WPF and C#. This program uses a local Microsoft Server SQL Database to store and retrieve user login information with ADO.NET. Users may only login if their credentials are found in the SQL database. I used parametered queries to retrieve and store user input into the database (see example code snippet below).
+
+Users may click on the "Create Account" button to create credentials that are stored in the SQL database. Windows were designed using a StackPanel layout in the XAML. Appropriate warnings are shown to the user according to their input: e.g. "Password length must be at least 8 characters", "That username already exists", etc.
 
 
 
